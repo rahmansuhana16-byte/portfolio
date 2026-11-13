@@ -3,91 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suhana A. - Portfolio</title>
+<title>Suhana A. | AI Student & Developer</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: Georgia, serif; background:#FFF8E7; color:#1a1a1a; }
-nav { display:flex; justify-content:space-between; padding:25px 60px; align-items:center; }
-.logo { font-weight:bold; letter-spacing:2px; font-size:18px; }
-nav a { margin-left:25px; text-decoration:none; color:#333; font-size:14px; }
-.hero { display:flex; justify-content:space-between; align-items:center; padding:60px; gap:40px; max-width:1100px; margin:auto; }
-.hero h1 { font-size:58px; line-height:1.1; font-weight:normal; }
-.hero h1 em { color:#0d7a6e; }
-.hero p { margin:20px 0 30px; color:#555; line-height:1.6; max-width:450px; }
-.btn-dark { background:#0a3d3a; color:white; padding:12px 22px; border-radius:25px; text-decoration:none; display:inline-block; }
-.btn-light { border:1px solid #ccc; padding:12px 22px; border-radius:25px; text-decoration:none; color:#333; display:inline-block; margin-left:10px; }
-.card { background:#0a3d3a; color:white; border-radius:20px; padding:35px 30px; text-align:center; width:300px; }
-.card img { width:130px; height:130px; border-radius:50%; object-fit:cover; border:4px solid white; }
-.card h3 { margin:15px 0 15px; }
-.tags span { background:white; color:#0a3d3a; padding:5px 12px; border-radius:20px; font-size:12px; margin:2px; display:inline-block; }
-.section { max-width:1100px; margin:auto; padding:40px 60px; }
-.section h2 { font-size:32px; margin-bottom:20px; }
-.box { background:white; border:1px solid #eee; border-radius:15px; padding:25px; margin-bottom:15px; }
-.box h3 { margin-bottom:8px; }
-.box p { color:#666; font-size:14px; line-height:1.6; }
-.badge { background:#0a3d3a; color:white; padding:4px 12px; border-radius:20px; font-size:13px; display:inline-block; margin-top:8px; }
-.projects { display:flex; gap:20px; flex-wrap:wrap; }
-.proj { background:white; border:1px solid #eee; border-radius:15px; padding:25px; width:300px; }
-.proj h3 { margin-bottom:10px; }
-.proj p { color:#666; font-size:14px; line-height:1.5; }
-.skills span { background:#e6f2f0; color:#0a3d3a; padding:8px 14px; border-radius:20px; font-size:14px; margin:4px; display:inline-block; }
-.cert { background:white; border:1px solid #eee; border-radius:15px; padding:20px 25px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center; }
-.cert b { font-size:16px; }
-.cert span { color:#888; font-size:13px; }
-.contact-box { background:#0a3d3a; color:white; border-radius:20px; padding:40px; text-align:center; margin-top:20px; }
-.contact-box a { color:white; font-weight:bold; }
-footer { text-align:center; padding:30px; color:#888; font-size:13px; }
-@media(max-width:700px){ .hero{flex-direction:column; padding:30px 20px; text-align:center;} nav{padding:20px;} .hero h1{font-size:40px;} .section{padding:30px 20px;} }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#F0FDF6;color:#0B2E22;line-height:1.6}
+a{color:#0B2E22;text-decoration:none}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 60px;position:sticky;top:0;background:rgba(240,253,246,.92);backdrop-filter:blur(12px);z-index:10;border-bottom:1px solid #D1FAE5}
+.logo{font-size:22px;font-weight:900;letter-spacing:1px}.logo span{color:#059669}
+nav .links a{margin-left:26px;font-size:14px;color:#4B5563;font-weight:500}
+nav .links a:hover{color:#059669}
+.btn{background:#064E3B;color:#fff;padding:12px 24px;border-radius:30px;font-weight:700;font-size:14px;display:inline-block;box-shadow:0 8px 20px rgba(6,78,59,.25)}
+.btn-light{border:2px solid #064E3B;padding:11px 24px;border-radius:30px;font-size:14px;margin-left:12px;display:inline-block;font-weight:600}
+.hero{max-width:1150px;margin:auto;padding:70px 60px 30px;display:flex;gap:50px;align-items:center}
+.hero-left{flex:1}
+.badge{display:inline-block;background:#D1FAE5;border:1px solid #A7F3D0;padding:7px 16px;border-radius:30px;font-size:13px;color:#065F46;font-weight:600}
+.hero h1{font-size:58px;line-height:1.05;margin:22px 0;font-weight:900;letter-spacing:-1px}
+.hero h1 span{color:#059669;position:relative}
+.hero h1 span::after{content:"";position:absolute;left:0;bottom:4px;width:100%;height:10px;background:#FDE68A;z-index:-1;border-radius:5px}
+.hero p{color:#4B5563;max-width:520px;margin-bottom:28px;font-size:17px}
+.hero-card{background:#064E3B;color:#fff;border-radius:28px;padding:32px;text-align:center;width:320px;flex-shrink:0;box-shadow:0 20px 40px rgba(6,78,59,.3);transform:rotate(2deg)}
+.hero-card img{width:140px;height:140px;border-radius:50%;object-fit:cover;border:5px solid #FDE68A}
+.hero-card h3{margin:15px 0 5px;font-size:22px}
+.hero-card p{color:#A7F3D0;font-size:13px}
+.hero-card .pill{background:#fff;color:#064E3B;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin:3px;display:inline-block}
+.stats{display:flex;gap:18px;max-width:1150px;margin:30px auto;padding:0 60px;flex-wrap:wrap}
+.stat{background:#fff;border:1px solid #D1FAE5;border-radius:20px;padding:20px 28px;flex:1;min-width:180px;box-shadow:0 4px 15px rgba(0,0,0,.04)}
+.stat b{font-size:30px;color:#059669;display:block}.stat span{color:#6B7280;font-size:13px}
+.section{max-width:1150px;margin:auto;padding:55px 60px}
+.section small{color:#059669;letter-spacing:2px;font-size:13px;font-weight:800;text-transform:uppercase}
+.section h2{font-size:38px;margin:12px 0 10px}
+.section>p{color:#6B7280;margin-bottom:28px}
+.box{background:#fff;border:1px solid #E5E7EB;border-radius:22px;padding:28px}
+.box p{color:#4B5563;font-size:16px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:22px;padding:28px;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;left:0;width:100%;height:5px;background:linear-gradient(90deg,#059669,#FBBF24)}
+.card:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(6,78,59,.12);transition:.3s}
+.card .icon{font-size:34px;margin-bottom:14px}
+.card h3{font-size:19px;margin-bottom:8px}.card p{color:#6B7280;font-size:14px}
+.tag{display:inline-block;background:#ECFDF5;padding:5px 12px;border-radius:20px;font-size:12px;margin:3px;color:#065F46;font-weight:600}
+.edu{background:#fff;border-radius:20px;padding:24px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;border:1px solid #E5E7EB}
+.edu h3{font-size:19px}.edu p{color:#6B7280;font-size:14px}
+.perc{background:#064E3B;color:#fff;padding:7px 18px;border-radius:30px;font-size:14px;font-weight:800;white-space:nowrap}
+.perc.gold{background:#FBBF24;color:#0B2E22}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{background:#fff;border:1px solid #D1FAE5;padding:12px 20px;border-radius:30px;font-size:14px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.cert{background:#fff;border:1px solid #E5E7EB;border-radius:18px;padding:20px;display:flex;justify-content:space-between;align-items:center}
+.cert b{font-size:15px}.cert span{color:#6B7280;font-size:13px}.tick{background:#D1FAE5;color:#065F46;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800}
+.contact{background:#064E3B;color:#fff;border-radius:28px;padding:50px;text-align:center;position:relative;overflow:hidden}
+.contact::after{content:"✦";position:absolute;right:30px;top:20px;font-size:60px;color:#FBBF24;opacity:.4}
+.contact h2{font-size:36px}.contact p{margin:12px 0;color:#D1FAE5}
+.contact .white{background:#FBBF24;color:#0B2E22;padding:13px 30px;border-radius:30px;display:inline-block;font-weight:800;margin-top:15px}
+footer{text-align:center;padding:30px;color:#9CA3AF;font-size:13px}
+@media(max-width:750px){nav{padding:18px 20px}.hero{flex-direction:column;padding:40px 20px;text-align:center}.hero h1{font-size:38px}.grid{grid-template-columns:1fr}.cert-grid{grid-template-columns:1fr}.section{padding:35px 20px}.stats{padding:0 20px}.hero-card{transform:none}}
 </style>
 </head>
 <body>
-<nav><div class="logo">SUHANA A.</div><div><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+<nav><div class="logo">SUHANA <span>💚 A.</span></div><div class="links"><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#contact" class="btn">Contact</a></div></nav>
 
 <div class="hero">
-<div>
-<p>✦ B.Sc. Computer Science - Generative AI</p>
-<h1>Turning AI<br>ideas into<br><em>working projects.</em><br>One at a time.</h1>
+<div class="hero-left">
+<span class="badge">✦ B.Sc. Computer Science - Generative AI</span>
+<h1>Turning AI<br>ideas into<br><span>working projects.</span><br>One at a time.</h1>
 <p>Hello, I'm Suhana A. from Rathinam Global University. A motivated B.Sc. Computer Science (AI) student seeking internship opportunity to gain practical experience.</p>
-<a href="#projects" class="btn-dark">View My Projects</a><a href="#contact" class="btn-light">Contact Me</a>
+<a href="#about" class="btn">About Me →</a><a href="#contact" class="btn-light">Contact Me</a>
 </div>
-<div class="card">
+<div class="hero-card">
 <img src="suhana.jpg.jpeg" alt="Suhana A">
 <h3>Suhana A</h3>
-<p style="font-size:13px; opacity:0.9; margin-bottom:10px;">Rathinam Global University</p>
-<div class="tags"><span>Python</span><span>SQL</span><span>AI</span><span>Gen AI</span></div>
+<p>Rathinam Global University</p>
+<p style="margin:12px 0 0"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">AI</span><span class="pill">Gen AI</span></p>
+<p style="margin-top:14px;font-size:12px;color:#FDE68A">⭐ 95% HSC • 93% SSLC</p>
 </div>
 </div>
 
-<div class="section" id="about"><h2>Career Objective</h2><div class="box"><p>Motivated and enthusiastic B.Sc. Computer Science (AI) student seeking an internship opportunity to gain practical industry experience and strengthen technical skills. Possess foundational knowledge of Python programming, Database Management Systems, SQL, and HTML. Eager to learn new technologies, improve problem-solving abilities, and contribute positively to a professional team.</p></div></div>
-
-<div class="section" id="education"><h2>Education</h2>
-<div class="box"><h3>🎓 B.Sc. Computer Science - Generative AI</h3><p>Rathinam Global University</p><span class="badge">Currently Pursuing</span></div>
-<div class="box"><h3>📚 Higher Secondary Certificate (HSC - Class XII)</h3><p>Islamiyah Higher Secondary School</p><span class="badge">95%</span></div>
-<div class="box"><h3>📚 Secondary School Leaving Certificate (SSLC - Class X)</h3><p>Islamiyah Higher Secondary School</p><span class="badge">93%</span></div>
+<div class="stats">
+<div class="stat"><b>95%</b><span>HSC - Class XII • Islamiyah School</span></div>
+<div class="stat"><b>93%</b><span>SSLC - Class X • Islamiyah School</span></div>
+<div class="stat"><b>7+</b><span>Certifications Completed</span></div>
+<div class="stat"><b>6+</b><span>Skills & Technologies</span></div>
 </div>
 
-<div class="section" id="skills"><h2>Technical Skills</h2><div class="skills"><span>Python</span><span>SQL</span><span>DBMS</span><span>HTML</span><span>Artificial Intelligence</span><span>Generative AI</span></div>
-<h2 style="margin-top:35px;">Soft Skills</h2><div class="skills"><span>Quick Learning</span><span>Problem-Solving</span><span>Communication</span><span>Teamwork</span><span>Time Management</span><span>Adaptability</span></div>
-<h2 style="margin-top:35px;">Languages</h2><div class="skills"><span>Tamil</span><span>English</span></div>
+<div class="section" id="about"><small>✦ About Me</small><h2>Career Objective</h2><div class="box"><p>Motivated and enthusiastic B.Sc. Computer Science (AI) student seeking an internship opportunity to gain practical industry experience and strengthen technical skills. Possess foundational knowledge of Python programming, Database Management Systems, SQL, and HTML. Eager to learn new technologies, improve problem-solving abilities, and contribute positively to a professional team.</p></div></div>
+
+<div class="section" id="education"><small>✦ Education</small><h2>My Learning Journey</h2>
+<div class="edu"><div><h3>🎓 B.Sc. Computer Science - Generative AI</h3><p>Rathinam Global University</p></div><span class="perc gold">Pursuing</span></div>
+<div class="edu"><div><h3>📚 Higher Secondary Certificate (HSC - Class XII)</h3><p>Islamiyah Higher Secondary School</p></div><span class="perc">95%</span></div>
+<div class="edu"><div><h3>📚 Secondary School Leaving Certificate (SSLC - Class X)</h3><p>Islamiyah Higher Secondary School</p></div><span class="perc">93%</span></div>
 </div>
 
-<div class="section" id="certificates"><h2>Certifications</h2>
-<div class="cert"><div><b>Python Certificate: Programming Fundamentals</b><br><span>Infosys</span></div><span>✅ Certified</span></div>
-<div class="cert"><div><b>Python Essentials 1</b><br><span>Cisco</span></div><span>✅ Certified</span></div>
-<div class="cert"><div><b>Introduction to Programming</b><br><span>Infosys</span></div><span>✅ Certified</span></div>
-<div class="cert"><div><b>Business Email</b><br><span>HP LIFE</span></div><span>✅ Certified</span></div>
-<div class="cert"><div><b>Effective Presentation</b><br><span>HP LIFE</span></div><span>✅ Certified</span></div>
-<div class="cert"><div><b>Business Communication</b><br><span>HP LIFE</span></div><span>✅ Certified</span></div>
-<div class="cert"><div><b>English Certificate</b><br><span>EF SET</span></div><span>✅ Certified</span></div>
+<div class="section" id="skills"><small>✦ My Skills</small><h2>Technical Skills</h2><div class="skills"><span class="skill">🐍 Python</span><span class="skill">🗄️ SQL</span><span class="skill">💾 DBMS</span><span class="skill">🌐 HTML</span><span class="skill">🤖 Artificial Intelligence</span><span class="skill">✨ Generative AI</span></div>
+<h2 style="margin-top:35px;font-size:28px">Soft Skills</h2><div class="skills" style="margin-top:15px"><span class="skill">🚀 Quick Learning</span><span class="skill">🧩 Problem-Solving</span><span class="skill">💬 Communication</span><span class="skill">👥 Teamwork</span><span class="skill">⏰ Time Management</span><span class="skill">🔄 Adaptability</span></div>
+<h2 style="margin-top:35px;font-size:28px">Languages</h2><div class="skills" style="margin-top:15px"><span class="skill">Tamil</span><span class="skill">English</span></div>
 </div>
 
-<div class="section" id="projects"><h2>My Projects</h2><div class="projects">
-<div class="proj"><h3>🤖 AI Chatbot</h3><p>A smart chatbot built with Python that answers questions and helps users.</p></div>
-<div class="proj"><h3>📝 AI Content Generator</h3><p>Generates creative content using Generative AI tools.</p></div>
-<div class="proj"><h3>🌐 Portfolio Website</h3><p>This website! Built with HTML, CSS and hosted on GitHub Pages.</p></div>
+<div class="section" id="skills2"><small>✦ What I Can Do</small><h2>Skills That Make Me Different</h2>
+<div class="grid">
+<div class="card"><div class="icon">🐍</div><h3>Python Development</h3><p>Clean Python code for logic, automation and AI projects.</p><div style="margin-top:12px"><span class="tag">Python</span><span class="tag">Logic</span></div></div>
+<div class="card"><div class="icon">✨</div><h3>Generative AI</h3><p>Using AI tools to create smart content and solve problems.</p><div style="margin-top:12px"><span class="tag">Gen AI</span><span class="tag">AI</span></div></div>
+<div class="card"><div class="icon">🗄️</div><h3>Database & SQL</h3><p>DBMS & SQL - storing, managing and querying data easily.</p><div style="margin-top:12px"><span class="tag">SQL</span><span class="tag">DBMS</span></div></div>
+<div class="card"><div class="icon">🌿</div><h3>Web Development</h3><p>Modern, beautiful websites with HTML & CSS - like this one!</p><div style="margin-top:12px"><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+<div class="card"><div class="icon">💬</div><h3>Communication</h3><p>Business Email, Presentation & English communication.</p><div style="margin-top:12px"><span class="tag">English</span><span class="tag">Tamil</span></div></div>
+<div class="card"><div class="icon">🚀</div><h3>Quick Learner</h3><p>Adaptable, problem-solving, teamwork and time management.</p><div style="margin-top:12px"><span class="tag">Teamwork</span><span class="tag">Growth</span></div></div>
 </div></div>
 
-<div class="section" id="contact"><div class="contact-box"><h2>Let's Work Together!</h2><p style="margin:15px 0;">Have an idea? Let's build it!</p><p>Email: <a href="mailto:rahmansuhana16@gmail.com">rahmansuhana16@gmail.com</a></p><p style="margin-top:10px;">GitHub: rahmansuhana16-byte</p><p style="margin-top:10px;">University: Rathinam Global University</p></div></div>
-<footer>© 2026 Suhana A. Made with ❤️</footer>
+<div class="section" id="certificates"><small>✦ Certifications</small><h2>My Achievements</h2>
+<div class="cert-grid">
+<div class="cert"><div><b>Python Certificate: Programming Fundamentals</b><br><span>Infosys</span></div><span class="tick">✓</span></div>
+<div class="cert"><div><b>Python Essentials 1</b><br><span>Cisco</span></div><span class="tick">✓</span></div>
+<div class="cert"><div><b>Introduction to Programming</b><br><span>Infosys</span></div><span class="tick">✓</span></div>
+<div class="cert"><div><b>Business Email</b><br><span>HP LIFE</span></div><span class="tick">✓</span></div>
+<div class="cert"><div><b>Effective Presentation</b><br><span>HP LIFE</span></div><span class="tick">✓</span></div>
+<div class="cert"><div><b>Business Communication</b><br><span>HP LIFE</span></div><span class="tick">✓</span></div>
+<div class="cert"><div><b>English Certificate</b><br><span>EF SET</span></div><span class="tick">✓</span></div>
+</div></div>
+
+<div class="section" id="contact"><div class="contact"><h2>Let's Work Together! 💚</h2><p style="margin:15px 0;">Have an idea? Let's build it!</p><p>Email: <a href="mailto:rahmansuhana16@gmail.com" style="color:#fff;font-weight:700">rahmansuhana16@gmail.com</a></p><p style="margin-top:10px;">GitHub: rahmansuhana16-byte</p><p style="margin-top:10px;">University: Rathinam Global University</p><a href="mailto:rahmansuhana16@gmail.com" class="white">Contact Me →</a></div></div>
+<footer>© 2026 Suhana A. Made with 💚 | Unique Mint Theme</footer>
 </body>
 </html>
