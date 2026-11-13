@@ -9,7 +9,7 @@
 body { font-family: Georgia, serif; background:#FFF8E7; color:#1a1a1a; }
 nav { display:flex; justify-content:space-between; padding:25px 60px; align-items:center; }
 .logo { font-weight:bold; letter-spacing:2px; font-size:18px; }
-nav a { margin-left:30px; text-decoration:none; color:#333; font-size:14px; }
+nav a { margin-left:25px; text-decoration:none; color:#333; font-size:14px; }
 .hero { display:flex; justify-content:space-between; align-items:center; padding:60px; gap:40px; max-width:1100px; margin:auto; }
 .hero h1 { font-size:58px; line-height:1.1; font-weight:normal; }
 .hero h1 em { color:#0d7a6e; }
@@ -22,38 +22,72 @@ nav a { margin-left:30px; text-decoration:none; color:#333; font-size:14px; }
 .tags span { background:white; color:#0a3d3a; padding:5px 12px; border-radius:20px; font-size:12px; margin:2px; display:inline-block; }
 .section { max-width:1100px; margin:auto; padding:40px 60px; }
 .section h2 { font-size:32px; margin-bottom:20px; }
+.box { background:white; border:1px solid #eee; border-radius:15px; padding:25px; margin-bottom:15px; }
+.box h3 { margin-bottom:8px; }
+.box p { color:#666; font-size:14px; line-height:1.6; }
+.badge { background:#0a3d3a; color:white; padding:4px 12px; border-radius:20px; font-size:13px; display:inline-block; margin-top:8px; }
 .projects { display:flex; gap:20px; flex-wrap:wrap; }
 .proj { background:white; border:1px solid #eee; border-radius:15px; padding:25px; width:300px; }
 .proj h3 { margin-bottom:10px; }
 .proj p { color:#666; font-size:14px; line-height:1.5; }
+.skills span { background:#e6f2f0; color:#0a3d3a; padding:8px 14px; border-radius:20px; font-size:14px; margin:4px; display:inline-block; }
+.cert { background:white; border:1px solid #eee; border-radius:15px; padding:20px 25px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center; }
+.cert b { font-size:16px; }
+.cert span { color:#888; font-size:13px; }
 .contact-box { background:#0a3d3a; color:white; border-radius:20px; padding:40px; text-align:center; margin-top:20px; }
 .contact-box a { color:white; font-weight:bold; }
 footer { text-align:center; padding:30px; color:#888; font-size:13px; }
-@media(max-width:700px){ .hero{flex-direction:column; padding:30px 20px; text-align:center;} nav{padding:20px;} .hero h1{font-size:40px;} }
+@media(max-width:700px){ .hero{flex-direction:column; padding:30px 20px; text-align:center;} nav{padding:20px;} .hero h1{font-size:40px;} .section{padding:30px 20px;} }
 </style>
 </head>
 <body>
-<nav><div class="logo">SUHANA A.</div><div><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+<nav><div class="logo">SUHANA A.</div><div><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+
 <div class="hero">
 <div>
-<p>✦ B.Sc. Computer Technology - Generative AI</p>
+<p>✦ B.Sc. Computer Science - Generative AI</p>
 <h1>Turning AI<br>ideas into<br><em>working projects.</em><br>One at a time.</h1>
-<p>Hello, I'm Suhana A. A student who loves building real projects with Python, Generative AI tools. Not just learning - building.</p>
+<p>Hello, I'm Suhana A. from Rathinam Global University. A motivated B.Sc. Computer Science (AI) student seeking internship opportunity to gain practical experience.</p>
 <a href="#projects" class="btn-dark">View My Projects</a><a href="#contact" class="btn-light">Contact Me</a>
 </div>
 <div class="card">
 <img src="suhana.jpg.jpeg" alt="Suhana A">
 <h3>Suhana A</h3>
-<div class="tags"><span>Python</span><span>AI</span><span>Gen AI</span></div>
+<p style="font-size:13px; opacity:0.9; margin-bottom:10px;">Rathinam Global University</p>
+<div class="tags"><span>Python</span><span>SQL</span><span>AI</span><span>Gen AI</span></div>
 </div>
 </div>
-<div class="section" id="about"><h2>About Me</h2><p style="line-height:1.7;color:#555;">I'm a B.Sc. Computer Technology student focused on Generative AI. I love turning ideas into working projects using Python and AI tools. Currently learning and building one project at a time.</p></div>
+
+<div class="section" id="about"><h2>Career Objective</h2><div class="box"><p>Motivated and enthusiastic B.Sc. Computer Science (AI) student seeking an internship opportunity to gain practical industry experience and strengthen technical skills. Possess foundational knowledge of Python programming, Database Management Systems, SQL, and HTML. Eager to learn new technologies, improve problem-solving abilities, and contribute positively to a professional team.</p></div></div>
+
+<div class="section" id="education"><h2>Education</h2>
+<div class="box"><h3>🎓 B.Sc. Computer Science - Generative AI</h3><p>Rathinam Global University</p><span class="badge">Currently Pursuing</span></div>
+<div class="box"><h3>📚 Higher Secondary Certificate (HSC - Class XII)</h3><p>Islamiyah Higher Secondary School</p><span class="badge">95%</span></div>
+<div class="box"><h3>📚 Secondary School Leaving Certificate (SSLC - Class X)</h3><p>Islamiyah Higher Secondary School</p><span class="badge">93%</span></div>
+</div>
+
+<div class="section" id="skills"><h2>Technical Skills</h2><div class="skills"><span>Python</span><span>SQL</span><span>DBMS</span><span>HTML</span><span>Artificial Intelligence</span><span>Generative AI</span></div>
+<h2 style="margin-top:35px;">Soft Skills</h2><div class="skills"><span>Quick Learning</span><span>Problem-Solving</span><span>Communication</span><span>Teamwork</span><span>Time Management</span><span>Adaptability</span></div>
+<h2 style="margin-top:35px;">Languages</h2><div class="skills"><span>Tamil</span><span>English</span></div>
+</div>
+
+<div class="section" id="certificates"><h2>Certifications</h2>
+<div class="cert"><div><b>Python Certificate: Programming Fundamentals</b><br><span>Infosys</span></div><span>✅ Certified</span></div>
+<div class="cert"><div><b>Python Essentials 1</b><br><span>Cisco</span></div><span>✅ Certified</span></div>
+<div class="cert"><div><b>Introduction to Programming</b><br><span>Infosys</span></div><span>✅ Certified</span></div>
+<div class="cert"><div><b>Business Email</b><br><span>HP LIFE</span></div><span>✅ Certified</span></div>
+<div class="cert"><div><b>Effective Presentation</b><br><span>HP LIFE</span></div><span>✅ Certified</span></div>
+<div class="cert"><div><b>Business Communication</b><br><span>HP LIFE</span></div><span>✅ Certified</span></div>
+<div class="cert"><div><b>English Certificate</b><br><span>EF SET</span></div><span>✅ Certified</span></div>
+</div>
+
 <div class="section" id="projects"><h2>My Projects</h2><div class="projects">
 <div class="proj"><h3>🤖 AI Chatbot</h3><p>A smart chatbot built with Python that answers questions and helps users.</p></div>
 <div class="proj"><h3>📝 AI Content Generator</h3><p>Generates creative content using Generative AI tools.</p></div>
 <div class="proj"><h3>🌐 Portfolio Website</h3><p>This website! Built with HTML, CSS and hosted on GitHub Pages.</p></div>
 </div></div>
-<div class="section" id="contact"><div class="contact-box"><h2>Let's Work Together!</h2><p style="margin:15px 0;">Have an idea? Let's build it!</p><p>Email: <a href="mailto:rahmansuhana16@gmail.com">rahmansuhana16@gmail.com</a></p><p style="margin-top:10px;">GitHub: rahmansuhana16-byte</p></div></div>
+
+<div class="section" id="contact"><div class="contact-box"><h2>Let's Work Together!</h2><p style="margin:15px 0;">Have an idea? Let's build it!</p><p>Email: <a href="mailto:rahmansuhana16@gmail.com">rahmansuhana16@gmail.com</a></p><p style="margin-top:10px;">GitHub: rahmansuhana16-byte</p><p style="margin-top:10px;">University: Rathinam Global University</p></div></div>
 <footer>© 2026 Suhana A. Made with ❤️</footer>
 </body>
 </html>
